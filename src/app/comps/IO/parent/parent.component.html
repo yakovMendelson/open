@@ -1,0 +1,15 @@
+<input #inp (input)='inpVal=inp.value'/>
+<br/>
+<app-child *ngIf="inpVal != undefined" [myName]='getName()'></app-child>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+<h2>Outputs</h2>
+<app-child-output (myEvent)="num= $event"></app-child-output>
+
+
+<div >{{num}}</div>

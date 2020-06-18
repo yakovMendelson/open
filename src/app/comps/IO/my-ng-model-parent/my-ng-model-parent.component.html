@@ -1,0 +1,23 @@
+<h4>ngModel</h4>
+<input [(ngModel)]='ngm'><br>
+<br>
+<input [(ngModel)]='ngm'><br>
+<br>
+<input [value]='ngm' (input)='ngm = $event.target.value'>
+<br>
+
+{{ngm}}<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<app-my-ng-model-child [value]='ngm' (valueChange)='ngm = $event'></app-my-ng-model-child>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<app-my-ng-model-child [(value)]='ngm'></app-my-ng-model-child>
